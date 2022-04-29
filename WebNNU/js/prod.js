@@ -8,9 +8,10 @@ document.getElementById("img-clock").src = clock_I ;
 document.getElementById("total").innerHTML = document.getElementById("price").innerHTML;
 
 let x=10;
+
 function click_plus()
 {
-    if(parseInt(document.getElementById("input-number").value)<x)
+    if(parseInt(document.getElementById("input-number").value)<x && document.getElementById("input-number").value<10)
     document.getElementById("input-number").value  = parseInt( document.getElementById("input-number").value)+1;
 }
 
@@ -32,4 +33,3 @@ document.getElementById("plus").addEventListener('click',click_plus);
 document.getElementById("minus").addEventListener('click',click_minus);
 document.getElementById("plus").addEventListener('click',total);
 document.getElementById("minus").addEventListener('click',total);
-
