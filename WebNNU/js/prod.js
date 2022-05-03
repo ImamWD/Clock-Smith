@@ -5,7 +5,7 @@ let clock_I = localStorage.getItem("clock_img");
 document.getElementById("clock-name").innerHTML = clock_N;
 document.getElementById("price").innerHTML = clock_S;
 document.getElementById("img-clock").src = clock_I ;
-document.getElementById("total").innerHTML = document.getElementById("price").innerHTML;
+document.getElementById("total").innerHTML = clock_S;
 
 let x=10;
 
